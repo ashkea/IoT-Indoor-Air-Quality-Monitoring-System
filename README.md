@@ -34,7 +34,10 @@ For the MQ135 library, there are modifications made on the version in the reposi
 - If you are using a microcontroller that is not Arduino, go to the MQ135.cpp file in your library folder and change the original '1023' value to whatever the ADC resolution of your microcontroller is. For this project's case, the ESP32 has a 12-bits ADC so **'1023'** was replaced with **'4095'**
 - You must also correct the default parameter **'rzero'** and **'rload'** value in the MQ135.h file in your library folder. You can find the  **'rzero'** of your MQ135 sensor by running the _'mq135_r0.ino'_ script for at least an hour in clean air, or around 414 CO2 ppm, and use the value it will stabilize on and replace the existing **'rzero'** in your MQ135.h file. For the **'rload'**, you can check it on the board of your MQ135 and replace the default value accordingly.
 
+### WiFi
+The methods are fine as it is but you should change the access point details found in line 15 and 16 to the network you will use. 
+
 ### ThingsBoard
 The only thing you should change from this code with regards to ThingsBoard is the device access token you will gain from initiating a device on your ThingsBoard instance. You can find it on '_main.ino_', line 18.
 
-Going back to the '_main.ino_' script, after following the previous instructions, you are ready to run the script and monitor.
+Going back to the '_main.ino_' script, after following the previous instructions, you are ready to run the script and monitor the air quality accordingly.
