@@ -8,7 +8,7 @@ This section will show you how to use the '_main.ino_' sciprt used by the sensor
 
 ### Components
 First, to use the script, make sure you have the following components:
-- ESP32 Microcontroller (The exact microcontrolelr model used in this project is the ESP32-WROOM-32U)
+- ESP32 Microcontroller (The exact microcontroller model used in this project is the ESP32-WROOM-32U)
 - DHT22 sensor
 - PMS7003 sensor
 - MQ135 sensor
@@ -16,6 +16,8 @@ First, to use the script, make sure you have the following components:
 
 ### Schematic
 Follow the schematic below in connecting the components.
+
+![Picture of project schematic](/Node_Schematic.png)
 
 ### Arduino IDE
 Make sure that you have already installed Arduino IDE (Version is not important). After installation, add ESP32 as one of the group of boards since this environment is naturally for Arduinos. After that, select your appropriate development kit. 
